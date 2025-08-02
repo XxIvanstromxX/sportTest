@@ -4,8 +4,6 @@ const {
   getAllProducts,
   getProductById,
 } = require("../controllers/productController");
-const { protect } = require("../middlewares/authMiddleware");
-const { authRoleMiddleware } = require("../middlewares/roleMiddleware");
 
 router.get("/", getAllProducts);
 router.get("/:id", getProductById);
