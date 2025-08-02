@@ -64,16 +64,6 @@ const userSchema = new Schema({
       default: [],
     },
   },
-  chatHistory: {
-    type: [
-      {
-        preguntaUsuario: { type: String, required: true },
-        respuestaChatbot: { type: String, required: true },
-        fecha: { type: Date, default: Date.now }, // Fecha de la interacción
-      },
-    ],
-    default: [], // Valor por defecto: un array vacío
-  },
   createdAt: {
     type: Date,
     default: Date.now,
